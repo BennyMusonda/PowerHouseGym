@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerHouse Gym</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">POWER<span>HOUSE</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider Hero Section -->
+    <section class="slider-container">
+        <div class="slider">
+
+
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/imgs/slide1.jpg');">
+                <div class="slide-content">
+                    <h1>YOUR PRIVATE ZONE</h1>
+                    <p>No crowds. No waiting. Book your premium gym container online and unlock absolute focus.</p>
+                    <a href="#contact" class="btn">Learn More</a>
+                </div>
+            </div>
+
+
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/imgs/slide2.jpg');">
+                <div class="slide-content">
+                    <h1>EXPERT COACHING</h1>
+                    <p>Personalized training designed for your body.</p>
+                    <a href="#classes" class="btn">View Programs</a>
+                </div>
+            </div>
+
+
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/imgs/slide3.jpg');">
+                <div class="slide-content">
+                    <h1> BOOK. UNLOCK. TRAIN. </h1>
+                    <p>Secure your hourly slot instantly. Receive your digital key pass, scan at the door, and dominate your workout.</p>
+                    <a href="#contact" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+            <!-- Slide 4 -->
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./assets/imgs/slide4.jpg');">
+                <div class="slide-content">
+                    <h1>MAXIMIZE YOUR HOUR</h1>
+                    <p> No distractions, no wasted time. Get in, crush your session, and leave transformed before the timer stops.</p>
+                    <a href="#contact" class="btn">Join Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slider Controls -->
+        <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+
+        <!-- Slider Dots -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+    <section id="classes" class="classes-section">
+  <h2>OUR <span>CLASSES</span></h2>
+  <div class="classes-container">
+    
+    <!-- Card 1: Yoga -->
+    <div class="class-card">
+      <img src="./assets/imgs/slide1.jpg" alt="Yoga Class">
+      <h3>Yoga</h3>
+      <p>Enhance flexibility and mindfulness with our expert-led yoga sessions.</p>
+      <button class="card-btn">Learn More</button>
+    </div>
+
+    <!-- Card 2: HIIT -->
+    <div class="class-card">
+      <img src="./assets/imgs/slide2.jpg" alt="HIIT Class">
+      <h3>HIIT</h3>
+      <p>Burn calories and build endurance with high-intensity interval training.</p>
+      <button class="card-btn">Learn More</button>
+    </div>
+
+    <!-- Card 3: Strength -->
+    <div class="class-card">
+      <img src="./assets/imgs/slide3.jpg" alt="Strength Class">
+      <h3>Strength</h3>
+      <p>Sculpt your body and build muscle using free weights and machines.</p>
+      <button class="card-btn">Learn More</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Contact <span>Us</span></h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    </section>
+
+    <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Structural Division: Quick Links -->
+        <div class="footer-nav">
+            <a href="#" class="footer-link">Home</a>
+            <a href="#classes" class="footer-link">Classes</a>
+            <a href="#contact" class="footer-link">Contact</a>
+            <a href="#profile" class="footer-link">Profile</a>
+        </div>
+        
+        <!-- Structural Division: Copyright -->
+        <div class="footer-copyright">
+            <p>&copy; 2026 PowerHouse Gym. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
